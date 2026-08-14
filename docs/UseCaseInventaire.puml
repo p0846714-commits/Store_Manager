@@ -1,0 +1,28 @@
+@startuml usecase
+
+left to right direction
+actor "Inventaire" as U
+
+rectangle "Store_Manager"{
+
+    usecase "Produit Tier" as PT
+ 
+
+    usecase "lister Statistique" as LSSS
+    usecase "enregistrer produit" as EP
+    usecase "historique Catalogue Courant" as HRGVC
+    usecase "Sélection des Articles" as SA
+
+}
+
+
+PT ..> EP : <<include>>
+PT ..> SA : <<include>>
+PT ..> LSSS : <<include>>
+PT ..>  HRGVC: <<include>>
+
+
+U->PT
+
+@enduml
+

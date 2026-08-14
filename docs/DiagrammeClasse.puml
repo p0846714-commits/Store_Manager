@@ -1,0 +1,86 @@
+@startuml Classe
+
+
+class Produit{
+    id Produit
+    nom
+    prix
+    qtStock
+    
+}
+
+class Client{
+    id Client
+    nom
+    prenom
+    telephone
+    email
+
+}
+
+class Fournisseur{
+    id Fournisseur
+    nom
+    prenom
+    telephone
+    email
+
+}
+
+class Commande{
+    id Commande
+    nom
+    montantTotal
+}
+
+class Ligne_Commande{
+    id Ligne_Commande
+    quantite
+}
+
+class Dette{
+    id Dette
+
+}
+
+class Paiement{
+    id Paiement
+    modePaiement
+
+}
+
+
+class Approvisonnement{
+    id Approvisonnement
+    montantTotal
+
+}
+
+class Ligne_Approvisonnement{
+        id Ligne_Approvisonnement
+        prix
+        quantite
+
+
+}
+
+
+Commande"1"--"0..1"Ligne_Commande
+
+
+Client"1"--"0..*"Commande
+Dette"0..*"--"1"Client
+
+
+Produit"0..1"--"1"Ligne_Commande
+
+
+Fournisseur"1"--"0..*"Approvisonnement
+Approvisonnement"1"--"0..*"Ligne_Approvisonnement
+
+
+Ligne_Approvisonnement"1"--"0..*"Produit
+Commande"1"--"0..*"Paiement
+
+
+@enduml

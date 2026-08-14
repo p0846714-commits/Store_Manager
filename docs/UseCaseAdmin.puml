@@ -1,0 +1,97 @@
+@startuml usecase
+
+
+left to right direction
+actor "Admin" as U
+
+rectangle "Store_Manager"{
+
+
+    usecase "Tableau de Bord" as TB
+    usecase "Vente Post" as VP
+    usecase "Gestion Dettes" as GD
+    usecase "Approvisonnement" as A
+    usecase "Produit Tiers" as PT
+
+
+
+
+    usecase "consulter les ventes recentes" as CVR
+    usecase "consulter les dettes du jours" as CDR
+    usecase "consulter les ruptures et alertes " as CRA
+
+    usecase "voir les livraisons du jour " as VLJ
+    usecase "voir les clients debiteurs " as VCD
+    usecase "voir les soldes fournisseurs  " as VSF
+
+    usecase "selectionner des articles" as SA
+    usecase "  valider la vente" as VA
+    usecase "historique registre général des Ventes & Commandes" as HRGVC
+    usecase "lister Statistique" as LT
+
+    usecase "lister Statistique" as LT
+    usecase "recherche des dettes actives" as LT
+
+
+    usecase "lister Statistique" as LTT
+    usecase "historique Registre des Dettes Actives" as HRDA
+
+
+
+    usecase "lister Statistique" as LTTT
+    usecase "historique Bordereaux de Livraison (Réceptions)" as HBLR
+
+
+    usecase "lister Statistique" as LSSS
+    usecase "enregistrer produit" as EP
+    usecase "lister Gestion Produits" as LGP0
+    usecase "lister Gestion Clients" as LGC1
+    usecase "lister Gestion Fournisseurs" as LGF2
+    usecase "historique Catalogue Courant" as HBLRR
+
+
+}
+
+
+TB ..> CVR : <<include>>
+TB ..> CDR : <<include>>
+TB ..> CRA : <<include>>
+
+TB ..> VLJ : <<include>>
+TB ..> VCD : <<include>>
+TB ..> VSF : <<include>>
+
+
+VP ..>SA : <<include>>
+VP ..>VA : <<include>>
+VP ..>HRGVC : <<include>>
+VP ..>LT : <<include>>
+
+
+GD ..>LTT : <<include>>
+GD ..>HRDA : <<include>>
+
+
+A ..>LTTT : <<include>>
+A ..>HBLR: <<include>>
+
+
+PT ..>  LSSS: <<include>>
+PT ..>  EP: <<include>>
+PT ..>  LGP0: <<include>>
+PT ..>  LGC1: <<include>>
+PT ..>  LGF2: <<include>>
+PT ..>  HBLRR: <<include>>
+
+
+U->TB
+U->VP
+U->GD
+U->A
+U->PT
+
+
+
+
+@enduml
+

@@ -1,0 +1,43 @@
+@startuml usecase
+
+
+left to right direction
+actor "Manager" as U
+
+rectangle "Store_Manager"{
+
+    usecase "Vente POS" as VP
+    usecase "Gestion Dettes" as GD
+ 
+    usecase "lister Statistique" as LSSS
+    usecase "enregistrer produit" as EP
+    usecase "historique Registre Général des Ventes & Commandes" as HRGVC
+    usecase "Sélection des Articles" as SA
+
+
+    ' Gestion Dettes
+
+    usecase "lister Statistique" as LS
+    usecase "Registre des Dettes Actives" as RDA
+
+
+}
+
+
+VP ..> EP : <<include>>
+VP ..> SA : <<include>>
+VP ..> LSSS : <<include>>
+VP ..>  HRGVC: <<include>>
+
+
+GD ..> LS : <<include>>
+GD ..> RDA : <<include>>
+
+
+U->VP
+U->GD
+
+
+
+@enduml
+

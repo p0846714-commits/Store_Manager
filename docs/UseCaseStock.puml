@@ -1,0 +1,55 @@
+@startuml usecase
+
+
+left to right direction
+actor "Manager" as U
+
+rectangle "Store_Manager"{
+
+    usecase "Approvisionnement" as A
+    usecase "produits tiers " as GD
+ 
+
+
+
+    usecase "lister Statistique" as LSS
+    usecase "enregistrer produit" as EP
+    usecase "historique Catalogue Courant" as HRGVC
+    usecase "Sélection des Articles" as SA
+    usecase " Gestion Clients" as GC
+    usecase "Gestion Produits" as GP
+    usecase "Gestion Fournisseurs" as GF
+    usecase "Registre des Dettes Actives" as RDA
+
+    usecase "historique Bordereaux de Livraison (Réceptions)" as HBLR
+    usecase "lister Statistique" as LSSS
+
+
+}
+
+
+A ..> HBLR : <<include>>
+A ..> LSSS : <<include>>
+
+
+
+
+GD ..> LSS : <<include>>
+GD ..> RDA : <<include>>
+GD ..> EP : <<include>>
+GD ..> SA : <<include>>
+GD ..> HRGVC : <<include>>
+GD ..> GP : <<include>>
+GD ..> GF : <<include>>
+
+GD ..> GC : <<include>>
+
+
+
+U->A
+U->GD
+
+
+
+@enduml
+
