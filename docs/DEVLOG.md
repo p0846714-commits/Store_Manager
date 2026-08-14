@@ -32,3 +32,6 @@ UseCaseVente : j'ai sorti les fonctionnalites principales  de l utilisateur vent
 
 Difficultés :
  j'ai eu des difficutes avec  usecaseAdmin il y avait bcp de fonctionnalités à gerer sans un plan clair à suivre.
+
+
+j ai ajouté les schema relationnel a partir de la diagramme de classe
