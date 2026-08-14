@@ -1,37 +1,51 @@
 # 1. Suivi Chronologique des Phases
 
-###   [Vendredi - Phase 1] : Conception & BDD Fallback
-- **Heure de réalisation** : 
-- **Ce qui a été fait** : 
-- **Difficultés / Obstacles** :  -->
+### [Vendredi - Phase 1] 
+
+ **Heure de réalisation :**
+
+   14h - 17h : Travail sur les diagrammes de cas d'utilisation.
+   18h - 20h : Travail sur le diagramme de classes et le schéma relationnel.
+
+ **Ce qui a été fait :**
+
+  De 14h à 17h, j'ai travaillé sur les diagrammes de cas d'utilisation.
+
+  J'ai créé 4 diagrammes de Use Case :
+
+  UseCaseAdmin
+  UseCaseInventaire
+  UseCaseStock
+  UseCaseVente
+
+  Pour chaque diagramme, j'ai essayé d'identifier les fonctionnalités principales et les fonctionnalités secondaires de chaque utilisateur.
+
+  Pour UseCaseAdmin, j'ai identifié les différentes fonctionnalités que l'administrateur peut faire dans l'application.
+
+  Pour UseCaseInventaire, j'ai identifié les fonctionnalités liées à la gestion de l'inventaire.
+
+  Pour UseCaseStock, j'ai identifié les fonctionnalités liées à la gestion du stock.
+
+  Pour UseCaseVente, j'ai identifié les fonctionnalités liées à la vente.
 
 
 
-Heure de realisation 
+  Ensuite, de 18h à 20h, j'ai travaillé sur le diagramme de classes. Je me suis basé sur les classes que le coach nous a données ainsi que sur les différents Use Case que j'avais réalisés.
 
-14h -17h usecase admin,usecase inventaire,usecase stock,usecase vente
-18h-20h diagramme de classe en me basant des classes que le coach nous a donné et les usecases
+  Après avoir terminé le diagramme de classes, j'ai commencé à faire le schéma relationnel de la base de données à partir de celui-ci.
 
-Description de la creation des diagrammes de use case et de classe ma demarche :
+  Enfin, j'ai commencé la partie connexion à la base de données PostgreSQL avec :
 
-j'ai créé 4 Diagrammes de UseCase 
-
-{
-
-UsecaseAdmin
-UseCaseInventaire
-UseCaseStock
-UseCaseVente
-
-}
-
-UsecaseAdmin : j'ai sorti les fonctionnalites principales  de l utilisateur Admin et les fonctionnalites secondaires
-UseCaseInventaire : j'ai sorti les fonctionnalites principales  de l utilisateur inventaire et les fonctionnalites secondaires
-UseCaseStock : j'ai sorti les fonctionnalites principales  de l utilisateur stock et les fonctionnalites secondaires
-UseCaseVente : j'ai sorti les fonctionnalites principales  de l utilisateur vente et les fonctionnalites secondaires
-
-Difficultés :
- j'ai eu des difficutes avec  usecaseAdmin il y avait bcp de fonctionnalités à gerer sans un plan clair à suivre.
+   la création de src/Core/Database.php
+   la connexion à PostgreSQL avec PDO
+   la mise en place de try/catch
 
 
-j ai ajouté les schema relationnel a partir de la diagramme de classe
+
+ Difficultés / Obstacles 
+
+  J'ai surtout eu des difficultés avec le  UseCaseAdmin  parce qu'il y avait beaucoup de fonctionnalités à gérer. Au début, je ne savais pas vraiment comment les organiser.
+
+  J'ai donc essayé de commencer par les fonctionnalités principales, puis de voir les fonctionnalités secondaires qui étaient liées à chacune d'elles.
+
+  J'ai également dû prendre un peu de temps pour comprendre comment passer du diagramme de classes au schéma relationnel de la base de données.
