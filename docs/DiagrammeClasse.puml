@@ -72,7 +72,7 @@ Client"1"--"0..*"Commande
 Dette"0..*"--"1"Client
 
 
-Produit"0..1"--"1"Ligne_Commande
+Produit"0..*"--"1"Ligne_Commande
 
 
 Fournisseur"1"--"0..*"Approvisonnement
