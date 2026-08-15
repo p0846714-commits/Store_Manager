@@ -1,6 +1,6 @@
 <?php
 
-class ClientRepository
+class FournisseurRepository
 {
 
     public PDO $pdo;

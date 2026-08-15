@@ -33,5 +33,3 @@ class VenteService
     
 }
 
-$VenteService = new VenteService();
-$VenteService-> AjouterPanier('produit',15); 
