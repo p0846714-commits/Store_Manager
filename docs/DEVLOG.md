@@ -123,3 +123,12 @@ J'ai créé deux méthodes :
     AugmenterStock()
 
 Pour le moment, les méthodes sont encore vides.
+
+
+
+
+J'ai créé UtilisateurRepository.
+
+J'ai créé AuthManager.
+
+Il utilise UtilisateurRepository pour récupérer l'utilisateur.
