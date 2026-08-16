@@ -132,3 +132,41 @@ J'ai créé UtilisateurRepository.
 J'ai créé AuthManager.
 
 Il utilise UtilisateurRepository pour récupérer l'utilisateur.
+
+
+
+1. Ouvre DEVLOG.md
+
+Ajoute cette section :
+
+
+
+
+
+## 2. Autopsie de 2 Méthodes Clés
+### 1. AjouterPanier()
+
+public function AjouterPanier(string $produit, int $quantite): void
+{
+    $this->panier[] = [
+        'produit' => $produit,
+        'quantite' => $quantite
+    ];
+}
+
+Explication :
+
+Cette méthode permet d'ajouter un produit dans le panier.
+Je donne le nom du produit et sa quantité.
+Ensuite, j'ajoute ces informations dans le tableau $panier.
+
+2. getPanier()
+public function getPanier(): array
+{
+    return $this->panier;
+}
+
+Explication :
+
+Cette méthode permet de récupérer le contenu du panier.
+Elle retourne le tableau $panier.
