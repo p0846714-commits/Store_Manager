@@ -18,6 +18,8 @@ Vendredi - Phase 1
   UseCaseStock
   UseCaseVente
 
+
+
   Pour chaque diagramme, j'ai essayé d'identifier les fonctionnalités principales et les fonctionnalités secondaires de chaque utilisateur.
 
   Pour UseCaseAdmin, j'ai identifié les différentes fonctionnalités que l'administrateur peut faire dans l'application.
@@ -94,3 +96,16 @@ J'ai utilisé le constructeur __construct() pour initialiser le panier.
 J'ai créé la fonction AjouterPanier() pour ajouter un produit et sa quantité dans le panier.
 
 J'ai créé la fonction getPanier() pour récupérer le contenu du panier.
+
+
+
+
+Création de DetteRepository.php.
+
+Création de DebtService.php.
+
+Mise en relation entre DebtService et DetteRepository.
+
+Création de la méthode getDettes() dans DebtService.
+
+Début de la création de la vue views/dettes/index.php.
