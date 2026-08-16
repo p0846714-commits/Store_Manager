@@ -109,3 +109,17 @@ Mise en relation entre DebtService et DetteRepository.
 Création de la méthode getDettes() dans DebtService.
 
 Début de la création de la vue views/dettes/index.php.
+
+
+
+
+J'ai commencé à créer SyplyService.
+
+J'ai ajouté la connexion PDO avec le constructeur.
+
+J'ai créé deux méthodes :
+
+    Receptionner()
+    AugmenterStock()
+
+Pour le moment, les méthodes sont encore vides.
