@@ -3,11 +3,11 @@
 
 class AuthController
 {
-    public function __construct(){
+    private function __construct(){
 
     }
 
-    public function seconnecter(string $email,string $password){
+    public static function  seconnecter(string $email,string $password){
 
 
     }

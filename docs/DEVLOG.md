@@ -30,8 +30,7 @@ Vendredi - Phase 1
 
   Pour UseCaseVente, j'ai identifié les fonctionnalités liées à la vente.
 
-  Ensuite, de 18h à 20h, j'ai travaillé sur le diagramme de classes. Je me suis basé sur les classes que le coach 
-  nous a données ainsi que sur les différents Use Case que j'avais réalisés.
+  Ensuite, de 18h à 20h, j'ai travaillé sur le diagramme de classes. Je me suis basé sur les classes que le coach nous a données ainsi que sur les différents Use Case que j'avais réalisés.
 
   Après avoir terminé le diagramme de classes, j'ai commencé à faire le schéma relationnel de la base de données à partir de celui-ci.
 

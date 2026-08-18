@@ -2,12 +2,17 @@
 
 class Dette
 {
-    public int $id;
+    public client $client_id;
+    public int $montant;
 
     public function __construct(
 
-        int $id = 0
+        int $montant
+
     ) {
-        $this->id = $id;
+
+    $this -> montant = $montant;
+
+
     }
 }

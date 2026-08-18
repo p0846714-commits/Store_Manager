@@ -2,7 +2,7 @@
 
 class Database
 {
-    public PDO $pdo;
+    private PDO $pdo;
 
     public function __construct()
     {
